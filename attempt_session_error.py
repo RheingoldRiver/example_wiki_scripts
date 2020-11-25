@@ -4,6 +4,7 @@ from river_mwclient.gamepedia_client import GamepediaClient
 from river_mwclient.auth_credentials import AuthCredentials
 
 credentials = AuthCredentials(user_file="me")
+# Not an esports client!
 site = GamepediaClient('wikisandbox-ucp', credentials=credentials)
 summary = 'Bot edit'
 
