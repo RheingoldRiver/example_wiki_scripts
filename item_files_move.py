@@ -7,6 +7,7 @@ credentials = AuthCredentials(user_file="bot")
 site = EsportsClient('lol', credentials=credentials, max_retries=10)
 summary = "Moving item pages"
 
+# really, more like, skipped...
 failed = []
 
 # Goal: Move all item files from File:itemname.png to File:ItemSquareitemname.png
