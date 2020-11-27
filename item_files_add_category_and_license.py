@@ -6,6 +6,8 @@ credentials = AuthCredentials(user_file="bot")
 site = EsportsClient('lol', credentials=credentials, max_retries=10)
 summary = "Updating with category & licensing"
 
+ # Ran this after item_pages_move.py 
+
 for page in site.client.categories['Items']:
 	page: Page
 	name: str = page.name.replace(' (Item)', '')
