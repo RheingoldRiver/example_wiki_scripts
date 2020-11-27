@@ -9,6 +9,12 @@ summary = "Moving item pages"
 
 failed = []
 
+# Goal: Move all item files from File:itemname.png to File:ItemSquareitemname.png
+# Discovery is by looking at pages in Category:Items and finding files named
+# after these pages, because our item files aren't all properly categorized
+# After doing this I'm going to run a separate script to properly categorize
+# all of the item files (probably I should have done that at the same time but meh lol
+
 try:
 	for page in site.client.categories['Items']:
 		page: Page
