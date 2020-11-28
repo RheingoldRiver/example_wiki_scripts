@@ -28,6 +28,9 @@ for page in site.client.categories['Item Icons']:
 		if not link.redirect:
 			continue
 		i = 0
+		
+		# note because `link` is a file, and not a page, we MUST use imageusage and NOT backlinks here to check usage
+		# link.backlinks() will return no results
 		for backlink in link.imageusage():
 			backlink: Page
 			i += 1
