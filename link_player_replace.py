@@ -26,7 +26,7 @@ class TemplateModifier(TemplateModifierBase):
         """
 
         # in this case there was already no disambiguating |link= parameter
-        if not self.current_template.has('link'):
+        if not template.has('link'):
             return
 
         player = template.get('player').value.strip()
