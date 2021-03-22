@@ -6,6 +6,10 @@ credentials = AuthCredentials(user_file="me")
 site = EsportsClient('lol', credentials=credentials)
 summary = 'Bot edit'
 
+# I wanted to get rid of all of the DPL tracking categories
+# This replaces the system messages for them all with a dash
+# which effectively makes the system messages empty
+# thus, disabling the categories from existing
 
 class PageModifier(PageModifierBase):
 	def update_plaintext(self, text):
