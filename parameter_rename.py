@@ -11,7 +11,7 @@ summary = 'Updating template prameter names to make them more consistent, reques
 # renames these parameter names
 
 params = {
-	'image.png': 'image',
+	'image': 'file',
 	'image artist': 'artist',
 	'theme animal': 'animal',
 	'theme song': 'song'
