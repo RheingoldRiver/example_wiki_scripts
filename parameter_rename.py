@@ -6,7 +6,7 @@ from mwparserfromhell.nodes import Template
 
 credentials = AuthCredentials(user_file="bot")
 site = WikiClient(url='https://wingsoffirefanon.fandom.com', credentials=credentials)
-summary = 'Updating template prameter names to make them more consistent, requested by User:himmalerin'
+summary = 'Updating template prameter names to make them more consistent, requested by [Redacted]'
 
 # renames these parameter names
 
