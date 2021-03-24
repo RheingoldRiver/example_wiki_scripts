@@ -8,6 +8,8 @@ credentials = AuthCredentials(user_file="bot")
 site = WikiClient(url='https://wingsoffirefanon.fandom.com', credentials=credentials)
 summary = 'Updating template prameter names to make them more consistent, requested by User:himmalerin'
 
+# renames these parameter names
+
 params = {
 	'image.png': 'image',
 	'image artist': 'artist',
