@@ -9,26 +9,26 @@ site = EsportsClient('lol', credentials=credentials)
 summary = 'Updating to new ExtendedRoster template'
 
 class PageModifier(PageModifierBase):
-	"""
-	We want to change the following text:
-	
-	{{ExtendedRosterStart|team1=KnockOut Esports|team2=Galaxy Racer Esports
-	}}
-	{{ExtendedRosterLine|flag=Egypt|res=None|player=Maged|name=Maged Marawan|role=Top
-	|r= }}
-	{{ExtendedRosterLine}}
-	
-	to:
-	
-	{{ExtendedRoster|team1=KnockOut Esports|team2=Galaxy Racer Esports
-	|{{ExtendedRoster/Line|flag=Egypt|res=None|player=Maged|name=Maged Marawan|role=Top
-	|r= }}
-	}}
-	
-	Note the need for the re.MULTILINE flag. Also note the use of the +? lazy quantifier instead of
-	the * greedy quantifier. 
-	"""
 	def update_plaintext(self, text):
+		"""
+		We want to change the following text:
+		
+		{{ExtendedRosterStart|team1=KnockOut Esports|team2=Galaxy Racer Esports
+		}}
+		{{ExtendedRosterLine|flag=Egypt|res=None|player=Maged|name=Maged Marawan|role=Top
+		|r= }}
+		{{ExtendedRosterLine}}
+		
+		to:
+		
+		{{ExtendedRoster|team1=KnockOut Esports|team2=Galaxy Racer Esports
+		|{{ExtendedRoster/Line|flag=Egypt|res=None|player=Maged|name=Maged Marawan|role=Top
+		|r= }}
+		}}
+		
+		Note the need for the re.MULTILINE flag. Also note the use of the +? lazy quantifier instead of
+		the * greedy quantifier.
+		"""
 		text = text.replace('{{ExtendedRosterLine', '|{{ExtendedRoster/Line')
 		text = text.replace('{{ExtendedRosterEnd}}', '}}')
 		text = re.sub(re.compile(r'ExtendedRosterStart([^}]+?)}}', re.MULTILINE),
