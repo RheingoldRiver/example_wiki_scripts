@@ -26,12 +26,12 @@ class PageModifier(PageModifierBase):
 		|r= }}
 		}}
 		
-		Note the need for the re.MULTILINE flag. Also note the use of the +? lazy quantifier instead of
+		Note the need for the re.MULTILINE flag. Also note the use of the *? lazy quantifier instead of
 		the * greedy quantifier.
 		"""
 		text = text.replace('{{ExtendedRosterLine', '|{{ExtendedRoster/Line')
 		text = text.replace('{{ExtendedRosterEnd}}', '}}')
-		text = re.sub(re.compile(r'ExtendedRosterStart([^}]+?)}}', re.MULTILINE),
+		text = re.sub(re.compile(r'ExtendedRosterStart([^}]*?)}}', re.MULTILINE),
 		              r'ExtendedRoster\1', text)
 		return text
 
