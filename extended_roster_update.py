@@ -28,6 +28,8 @@ class PageModifier(PageModifierBase):
 		
 		Note the need for the re.MULTILINE flag. Also note the use of the *? lazy quantifier instead of
 		the * greedy quantifier.
+		Originally I used +? but then actually there were some pages where ExtendedRosterStart had no
+		parameters and I had to change it to *?
 		"""
 		text = text.replace('{{ExtendedRosterLine', '|{{ExtendedRoster/Line')
 		text = text.replace('{{ExtendedRosterEnd}}', '}}')
