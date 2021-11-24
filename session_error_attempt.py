@@ -1,7 +1,7 @@
 import time
 
-from river_mwclient.gamepedia_client import GamepediaClient
-from river_mwclient.auth_credentials import AuthCredentials
+from mwrogue.gamepedia_client import GamepediaClient
+from mwrogue.auth_credentials import AuthCredentials
 
 credentials = AuthCredentials(user_file="me")
 # Not an esports client!
@@ -10,7 +10,7 @@ summary = 'Bot edit'
 
 # Attempt to encounter login errors and count approximately how frequently they occur
 # The goal was just to obtain some data
-# After running this I ended up adding a bunch of error-checking/retrying code to river_mwclient
+# After running this I ended up adding a bunch of error-checking/retrying code to mwrogue
 
 for trial in range(0, 10):
     i = 0

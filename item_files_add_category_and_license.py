@@ -1,5 +1,5 @@
-from river_mwclient.esports_client import EsportsClient
-from river_mwclient.auth_credentials import AuthCredentials
+from mwrogue.esports_client import EsportsClient
+from mwrogue.auth_credentials import AuthCredentials
 from mwclient.page import Page
 
 credentials = AuthCredentials(user_file="bot")

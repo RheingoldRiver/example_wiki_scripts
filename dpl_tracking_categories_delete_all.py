@@ -1,6 +1,6 @@
-from river_mwclient.auth_credentials import AuthCredentials
-from river_mwclient.esports_client import EsportsClient
-from river_mwclient.page_modifier import PageModifierBase
+from mwrogue.auth_credentials import AuthCredentials
+from mwrogue.esports_client import EsportsClient
+from mwrogue.page_modifier import PageModifierBase
 
 credentials = AuthCredentials(user_file="me")
 site = EsportsClient('lol', credentials=credentials)

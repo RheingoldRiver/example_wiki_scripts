@@ -1,5 +1,5 @@
 # example_wiki_scripts
-Example wiki one-off Python scripts using river_mwclient
+Example wiki one-off Python scripts using mwrogue
 
 This repo will contain random scratches I write to accomplish tasks for Leaguepedia and my other wikis, but would otherwise not save. I realize these scripts are probably the most useful content for other people to see to learn how to write Python scripts, but I'm not going to save them in any of my normal repos, so I'm creating this repo to archive them. Hopefully it's useful!
 

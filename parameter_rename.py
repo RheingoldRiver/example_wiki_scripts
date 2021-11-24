@@ -1,7 +1,7 @@
 from mwparserfromhell.nodes.extras import Parameter
-from river_mwclient.wiki_client import WikiClient
-from river_mwclient.auth_credentials import AuthCredentials
-from river_mwclient.template_modifier import TemplateModifierBase
+from mwrogue.wiki_client import WikiClient
+from mwrogue.auth_credentials import AuthCredentials
+from mwrogue.template_modifier import TemplateModifierBase
 from mwparserfromhell.nodes import Template
 
 credentials = AuthCredentials(user_file="bot")
