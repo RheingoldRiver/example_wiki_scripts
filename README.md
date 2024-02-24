@@ -6,3 +6,5 @@ This repo will contain random scratches I write to accomplish tasks for Leaguepe
 See https://github.com/RheingoldRiver/mwcleric for installation and setup of my mwclient wrapper, which everything will depend on always.
 
 For additional example code, see https://github.com/RheingoldRiver/leaguepedia_util and https://github.com/RheingoldRiver/leaguepedia_archive, though these repos will tend to contain significantly more complicated code on average.
+
+If you find this repo useful, please consider [contributing your own example scripts](https://river.me/blog/send-me-scripts/) so that there are more examples for people to look at in the future!
