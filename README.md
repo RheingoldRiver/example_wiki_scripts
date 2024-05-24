@@ -10,3 +10,4 @@ If you find this repo useful, please consider [contributing your own example scr
 Other resources:
 * https://github.com/RheingoldRiver/leaguepedia_util, my utility scripts for Leaguepedia (Python)
 * https://github.com/RheingoldRiver/leaguepedia_archive, archived utility scripts for Leaguepedia (Python; one-time use scripts, or scripts that stopped being part of my regular workflow)
+* https://github.com/RheingoldRiver/sorcerer-update, a repo demonstrating how to create & update wiki pages with structured data from a loceal json file or similar
