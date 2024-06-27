@@ -1,3 +1,10 @@
+/*
+ * This is a script to be run using node.js or any other JavaScript runtime like bun.
+ * Make sure to install the dependencies using your preferred package manager:
+ * 
+ * npm i @quority/core mwparser
+ * yarn add @quority/core mwparser
+ */
 import { Wiki } from '@quority/core'
 import { parse } from 'mwparser'
 
