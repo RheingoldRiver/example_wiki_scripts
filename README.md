@@ -7,7 +7,12 @@ See https://github.com/RheingoldRiver/mwcleric for installation and setup of my 
 
 If you find this repo useful, please consider [contributing your own example scripts](https://river.me/blog/send-me-scripts/) so that there are more examples for people to look at in the future!
 
-Other resources:
+## Other resources
 * https://github.com/RheingoldRiver/leaguepedia_util, my utility scripts for Leaguepedia (Python)
 * https://github.com/RheingoldRiver/leaguepedia_archive, archived utility scripts for Leaguepedia (Python; one-time use scripts, or scripts that stopped being part of my regular workflow)
 * https://github.com/RheingoldRiver/sorcerer-update, a repo demonstrating how to create & update wiki pages with structured data from a local json file or similar
+
+## wiki.gg example repos
+* https://github.com/RheingoldRiver/sorcerer-update, learn how to create & update wiki pages using mwcleric
+* https://github.com/RheingoldRiver/amberisle-python, learn how to access csv data and create wiki pages
+* https://github.com/RheingoldRiver/python-not-included, see an example of a relatively complex infobox transform
